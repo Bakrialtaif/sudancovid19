@@ -53,8 +53,11 @@ body {
   background-color: #ffc300;
 }
 .coron {
-  color: tomato;
-  font-weight: bold;
+  /* color: tomato;
+  font-weight: bold; */
+}
+.fa-slack {
+  font-size: 1.4rem;
 }
 /*  start about initiative volunter*/
 .image-initative {
@@ -86,9 +89,44 @@ body {
 }
 /*  end about initiative volunter*/
 
+/*  start news */
+.news .image-news {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #eee;
+  padding: 2rem;
+  margin: 1rem;
+}
+.news .content-news {
+  border: 2px solid #eee;
+  padding: 1rem;
+  margin: 1rem;
+}
+.news .content-news p {
+  color: #6c6c6c;
+  margin-bottom: 0;
+}
+/*  end news */
+
 /*  start section status */
 section {
   margin-top: 4rem;
+}
+.statuses .status {
+  margin: 1rem;
+}
+.status .title {
+  position: relative;
+}
+.status .title::after {
+  position: absolute;
+  content: "";
+  height: 0.2rem;
+  width: 50%;
+  right: 50%;
+  background-color: teal;
 }
 .discover {
   background-color: #ffc300;
@@ -161,8 +199,6 @@ i {
   padding: 0.7rem;
   text-align: center;
   font-weight: bold;
-  border-top-right-radius: 0.7rem;
-  border-top-left-radius: 0.7rem;
 }
 .import-refrance .title-ref i {
   color: #fff;
@@ -170,8 +206,6 @@ i {
 .import-refrance .ref-content {
   background-color: #fff;
   padding: 0.7rem;
-  border-bottom-right-radius: 0.7rem;
-  border-bottom-left-radius: 0.7rem;
 }
 .import-refrance .ref-content ul {
   margin: 1.5rem;
@@ -348,6 +382,47 @@ i {
 }
 /*  end page team */
 
+/*  start ref-link */
+.ref-link .link {
+  margin-top: 1rem;
+}
+.ref-link .link p {
+  background-color: #fff;
+  box-shadow: 0px 0px 2.6rem #e4e3e3;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+.ref-link .link p a {
+  color: #6c6c6c;
+  text-decoration: none;
+  display: block;
+}
+
+/*  end ref-link */
+
+/*  start scroll up */
+#scroll-up {
+  text-align: center;
+  width: 60px;
+  line-height: 60px;
+  height: 60px;
+  position: fixed;
+  right: 1.5rem;
+  border-radius: 50%;
+  bottom: 1rem;
+  z-index: 1009;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
+  background-color: #fff;
+  box-shadow: 0px 0px 2.6rem #e4e3e3;
+}
+/*  end scroll up */
+
 @media (max-width: 769px) {
   .mb-md {
     margin-bottom: 2rem;
@@ -357,6 +432,9 @@ i {
   }
   .about-initative .content {
     margin-top: 1rem;
+  }
+  .about-initative .content h3 {
+    font-size: 1.22rem;
   }
 
   .progress {
@@ -392,7 +470,9 @@ i {
   .teams .item-teams {
     width: 100%;
   }
+  .news .image-news,
+  .news .content-news,
   .statuses .status {
-    margin: 1rem;
+    margin: 1rem 0;
   }
 }
