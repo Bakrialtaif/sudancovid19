@@ -34,7 +34,28 @@ body {
   font-family: "NeoSansArabic";
   background-color: #f9faf5;
 }
-
+.bg-g {
+  background-color: green;
+}
+.bg-b {
+  background-color: blue;
+}
+.bg-y {
+  background-color: yellowgreen;
+}
+.bg-x {
+  background-color: #14e3ec;
+}
+.bg-p {
+  background-color: #c317e2;
+}
+.bg-c {
+  background-color: #ffc300;
+}
+.coron {
+  color: tomato;
+  font-weight: bold;
+}
 /*  start about initiative volunter*/
 .image-initative {
   border: 1px solid #eee;
@@ -82,7 +103,7 @@ section {
   color: #fff;
   padding: 1.4rem;
   font-weight: bold;
-  margin: 1rem;
+  /* margin: 1rem; */
 }
 .status h4,
 .status h3,
@@ -171,9 +192,13 @@ i {
   background-color: #fff;
   box-shadow: 0px 0px 2.6rem #e4e3e3;
 }
+.initiative .fa-users {
+  color: #48f375f2;
+  font-size: 1.5rem;
+}
 .initiative h3 {
-  color: teal;
   font-weight: bold;
+  font-size: 1rem;
 }
 /*  end other-initiative */
 
@@ -206,6 +231,9 @@ i {
   padding: 1rem;
   width: 80%;
 }
+.control-rom .tab-content .tab-pane a {
+  color: #7c7c7c;
+}
 .control-rom .nav-tabs .nav-link {
   padding: 1rem;
   border: 1px solid #eee;
@@ -214,17 +242,17 @@ i {
   font-size: 1rem;
 }
 .control-rom .nav-tabs .nav-link i {
-  color: teal;
+  color: #ffc300;
 }
 .control-rom .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active,
 .active.fa-bookmark {
-  color: #fff;
-  background-color: teal;
+  color: teal;
+  background-color: #fff;
 }
 .control-rom .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active .fa-bookmark {
-  color: #fff;
+  color: #ffc300;
 }
 .control-rom .tab-content ul {
   margin: 2rem;
@@ -363,5 +391,8 @@ i {
   }
   .teams .item-teams {
     width: 100%;
+  }
+  .statuses .status {
+    margin: 1rem;
   }
 }
