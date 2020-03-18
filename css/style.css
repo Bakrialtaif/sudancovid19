@@ -1,0 +1,284 @@
+/* 
+project name  ===> Corona-sd
+ Design by    ===> aboabker hilal
+ start work   ===> 3/9/2020
+ main color   ===> teal
+ font-color   ===> #6c6c6c
+ font-family  ===> "NeoSansArabic";
+
+*/
+
+/*  start gernal settig */
+@import url("../neo-sans-arabic-cufonfonts-webfont/NeoSansArabicBold.woff");
+@import url("../neo-sans-arabic-cufonfonts-webfont/Neo\ Sans\ Arabic\ Regular.woff");
+@font-face {
+  font-family: "NeoSansArabic";
+  src: url("../neo-sans-arabic-cufonfonts-webfont/NeoSansArabicBold.woff");
+  font-family: "NeoSansArabic";
+  src: url("../neo-sans-arabic-cufonfonts-webfont/Neo\ Sans\ Arabic\ Regular.woff");
+}
+* {
+  padding: 0;
+  margin: 0;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.detail-project a,
+.modren-project a,
+.popular-project a {
+  text-decoration: none !important;
+}
+body {
+  text-align: right;
+  font-family: "NeoSansArabic";
+  background-color: #f9faf5;
+}
+/*  start section status */
+section {
+  margin-top: 4rem;
+}
+.discover {
+  background-color: #ffc300;
+}
+.cure {
+  background-color: #16a085;
+}
+.death {
+  background-color: #c70039;
+}
+.statuses .status {
+  color: #fff;
+  padding: 1.4rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+.status h4,
+.status h3,
+.status span,
+.status bdo {
+  color: #ffffff;
+  font-family: "NeoSansArabic";
+}
+.status i {
+  color: #ffffff;
+  font-weight: bold;
+}
+.status h4 {
+  text-align: center;
+}
+/*  end section status */
+
+/*  start about initiative volunter*/
+.image-initative {
+  border: 1px solid #eee;
+}
+.content .social-media i {
+  font-size: 2rem;
+  margin: 0 0.2rem;
+}
+.social-media .fa-facebook-square {
+  color: #3b5998;
+}
+.social-media .fa-twitter-square {
+  color: #55acee;
+}
+.social-media .fa-whatsapp-square {
+  color: #080;
+}
+.about-content {
+  padding: 1.5rem;
+  border: 2px solid #eee;
+  margin-top: 2rem;
+}
+.about-content p {
+  font-weight: bold;
+  color: #6c6c6c;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+/*  end about initiative volunter*/
+
+/*  start how-work */
+.title h3,
+i {
+  color: teal;
+  font-weight: bold;
+}
+.how-work .progress {
+  height: 0.5rem;
+  margin-top: 0.7rem;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+.how-work .bg {
+  background-color: teal;
+}
+.how-work .title-progress {
+  font-size: 1.2rem;
+}
+
+/*  end how-work */
+
+/*  start team work */
+.tab-menu {
+  margin-top: 2rem;
+}
+.team-work .nav {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  border: 1px solid #eee;
+  background-color: #fff;
+  box-shadow: 0px 0px 2.6rem #e4e3e3;
+}
+.team-work .nav-tabs .nav-link {
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #6c6c6c;
+}
+.team-work .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: teal;
+  border: none;
+}
+.tab-content {
+  margin-top: 2rem;
+  border: 1px solid #eee;
+  background-color: #fff;
+  box-shadow: 0px 0px 2.6rem #e4e3e3;
+}
+.tab-content ul {
+  margin-right: 2rem;
+}
+.tab-content .tab-pane {
+  padding: 1.3rem;
+}
+.tab-content ul li {
+  list-style: arabic-indic;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+.tab-content h3 {
+  font-weight: bold;
+}
+.tab-content h5 {
+  color: teal;
+  font-weight: bold;
+}
+/*  end team work */
+
+/*  start control-rom */
+.control-rom .fa-bookmark {
+  font-size: 1.3rem;
+  margin-left: 0.3rem;
+}
+.control-rom .nav-tabs {
+  border: 2px solid #eee;
+  margin-top: 2rem;
+  background-color: #fff;
+}
+.control-rom .nav-tabs .nav-link {
+  padding: 1rem;
+  border: 1px solid #eee;
+  color: #8c8c8c;
+  border-radius: 0;
+  font-size: 1rem;
+}
+.control-rom .nav-tabs .nav-link i {
+  color: teal;
+}
+.control-rom .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active,
+.active.fa-bookmark {
+  color: #fff;
+}
+.control-rom .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active .fa-bookmark {
+  color: #fff;
+}
+.control-rom .tab-content {
+  margin-top: 0.6rem;
+}
+/*  end control-rom */
+
+/*  start import-refrance */
+.import-refrance .fa-puzzle-piece {
+  font-size: 1.3rem;
+  margin-left: 0.3rem;
+}
+.import-refrance .nav-tabs {
+  border: 2px solid #eee;
+  margin-top: 2rem;
+  background-color: #fff;
+}
+.import-refrance .nav-tabs .nav-link {
+  padding: 1rem;
+  border: 1px solid #eee;
+  color: #8c8c8c;
+  border-radius: 0;
+  font-size: 1rem;
+}
+.import-refrance .nav-tabs .nav-link i {
+  color: teal;
+}
+.import-refrance .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active,
+.active.fa-puzzle-piece {
+  color: #fff;
+}
+.import-refrance .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active .fa-puzzle-piece {
+  color: #fff;
+}
+.import-refrance .tab-content {
+  margin-top: 0.6rem;
+}
+.import-refrance .tab-content .im-ref {
+  border: 2px solid #eee;
+  padding: 0.8rem;
+}
+/*  end import-refrance */
+
+/*  start other-initiative */
+.other-initiative .initiative {
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 2.6rem #e4e3e3;
+}
+.initiative h3 {
+  color: teal;
+  font-weight: bold;
+}
+/*  end other-initiative */
+
+/*  copy right */
+.copy-right p {
+  font-weight: bold;
+  color: #8c8c8c;
+}
+
+/*  end copy-right */
+
+@media (max-width: 769px) {
+  .statuses .status {
+    padding: 1rem;
+  }
+  .about-initative .content {
+    margin-top: 1rem;
+  }
+
+  .progress {
+    margin: 1rem 0;
+  }
+  .im-ref {
+    margin: 1rem 0;
+  }
+  .other-initiative .initiative {
+    margin-bottom: 1rem;
+  }
+  .nav-tabs .nav-item {
+    width: 100%;
+  }
+}
