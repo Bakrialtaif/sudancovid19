@@ -56,6 +56,10 @@ body {
   /* color: tomato;
   font-weight: bold; */
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 .fa-slack {
   font-size: 1.4rem;
 }
@@ -165,6 +169,11 @@ header .languge .lang a .ar {
 .image-initative {
   border: 1px solid #eee;
 }
+.about-initative .content h5 {
+  margin-top: 1rem;
+  color: teal;
+  font-weight: bold;
+}
 .content .social-media i {
   font-size: 2rem;
   margin: 0 0.2rem;
@@ -267,18 +276,12 @@ i {
   color: teal;
   font-weight: bold;
 }
-
-.how-work .progress {
-  height: 0.5rem;
-  margin-top: 0.7rem;
-  background: #fff;
-  border: 1px solid #ccc;
+.how-work .card {
+  margin-top: 1rem;
 }
-.how-work .bg {
-  background-color: teal;
-}
-.how-work .title-progress {
-  font-size: 1.2rem;
+.how-work .card-title {
+  padding: 1rem;
+  text-align: center;
 }
 
 /*  end how-work */
@@ -487,11 +490,6 @@ i {
 /*  end page team */
 
 /*  start ref-link */
-iframe {
-  min-height: 400px;
-  width: 100%;
-  margin: 10px auto 20px;
-}
 .ref-link .link {
   margin-top: 1rem;
 }
@@ -616,6 +614,9 @@ iframe {
     width: 50%;
   }
   .guide .content-guide {
-    margin: 0;
+    margin: 1rem 0 0 0;
+  }
+  .how-work .card {
+    margin: 1rem;
   }
 }
