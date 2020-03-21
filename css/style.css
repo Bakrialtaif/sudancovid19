@@ -534,6 +534,16 @@ i {
 
 /*  end guide */
 
+/*  start c-t-volunteer */
+.city {
+  margin-top: 1rem;
+}
+.city .content-city {
+  border: 1px solid #eee;
+  padding: 1rem;
+}
+/*  end c-t-volunteer */
+
 /*  start scroll up */
 #scroll-up {
   text-align: center;
