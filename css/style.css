@@ -490,6 +490,11 @@ i {
 /*  end page team */
 
 /*  start ref-link */
+iframe {
+  min-height: 400px;
+  width: 100%;
+  margin: 10px auto 20px;
+}
 .ref-link .link {
   margin-top: 1rem;
 }
