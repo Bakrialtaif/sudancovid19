@@ -1,2 +1,3 @@
 # sudancovid19
-## شباب ما تشتغلو على ال master اشتغلو على ال dev
+guys don't work on master , work on dev.
+good luck :)
