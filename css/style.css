@@ -566,7 +566,18 @@ iframe {
 .guide .content-guide ul {
   padding-right: 1rem;
 }
-
+/* Start fade code */
+.conversation {
+  max-width: 1000px;
+}
+.references .blockquote {
+  background-color: #ffffff;
+  padding: 12px 20px;
+  margin: 20px;
+  border-right: 3px solid teal;
+  font-size: 1.2rem;
+}
+/* End fade code */
 /*  end guide */
 
 /*  start c-t-volunteer */
