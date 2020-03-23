@@ -242,6 +242,9 @@ header .languge .lang a .ar {
   padding: 1rem;
   margin: 1rem;
 }
+.news .content-news ul {
+  padding: 1rem;
+}
 .news .content-news p {
   color: #6c6c6c;
   margin-bottom: 0;
