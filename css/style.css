@@ -65,18 +65,45 @@ a {
 }
 
 /*  start header */
+header {
+  background-color: #fff;
+}
 header .nav-header {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 2rem;
   width: 100%;
 }
-
+header .active {
+  color: teal !important;
+  border-color: teal !important;
+}
+header .menu {
+  display: none;
+}
 header .menu span i {
   cursor: pointer;
   color: #333;
 }
+header .navmenu {
+  display: flex;
+  width: 80%;
+  align-items: center;
+}
 
+header .navmenu .linknav {
+  margin-left: 1rem;
+}
+header .navmenu .linknav a {
+  font-weight: bold;
+  color: #989898;
+  border-bottom: 2px solid transparent;
+  line-height: 2px;
+}
+
+header .navmenu .linknav a:hover {
+  text-decoration: none;
+}
 header .nav-header .languge {
   display: flex;
   justify-content: space-around;
@@ -544,6 +571,41 @@ i {
 }
 /*  end c-t-volunteer */
 
+/* start public-policy */
+.public-policy .policy ul {
+  margin: 2rem;
+}
+.public-policy .policy ul li {
+  padding: 0.7rem;
+}
+
+.public-policy .policy h3 {
+  color: teal;
+}
+/*  end public-policy */
+
+/*  start who-are-we */
+.who-are-we .who .how-work ul {
+  margin: 2rem;
+}
+.who .how-work ul li {
+  padding: 0.7rem;
+}
+.who-border {
+  border: 1px solid #eee;
+  margin: 1rem 0 1rem;
+}
+.who-border ul {
+  margin: 2rem;
+}
+.who-border ul li {
+  margin-bottom: 0.5rem;
+}
+.who-border > div > div {
+  padding: 1rem;
+}
+/*  end who-are-we */
+
 /*  start scroll up */
 #scroll-up {
   text-align: center;
@@ -568,6 +630,15 @@ i {
 /*  end scroll up */
 
 @media (max-width: 769px) {
+  header .menu {
+    display: block;
+  }
+  header .menu .open i {
+    font-size: 1.5rem;
+  }
+  header .navmenu {
+    display: none;
+  }
   .mb-md {
     margin-bottom: 2rem;
   }
@@ -628,5 +699,31 @@ i {
   }
   .how-work .card {
     margin: 1rem;
+  }
+
+  /*  start public-policy */
+  .public-policy .policy ul {
+    margin: 1rem 2rem;
+  }
+
+  /*  end  public-policy */
+
+  /*  start who-are-we*/
+  .who-are-we .who .how-work ul {
+    margin: 1rem 2rem;
+  }
+
+  .who-border > div > div {
+    padding: 1rem 0;
+  }
+  /*  end who-are-we*/
+}
+
+@media (max-width: 999px) {
+  header .navmenu {
+    display: none;
+  }
+  header .menu {
+    display: block;
   }
 }
