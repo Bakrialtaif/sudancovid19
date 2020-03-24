@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   $(".open").click(function() {
     document.getElementById("Sidenav").style.width = "100%";
-    document.body.style.overflowX = "hidden";
+    // document.body.style.overflowX = "hidden";
   });
   $(".closebtn").click(function() {
     document.getElementById("Sidenav").style.width = "0";

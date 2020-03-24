@@ -119,6 +119,7 @@ header .languge .lang a .ar {
   width: 16px;
   height: 11px;
 }
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -131,7 +132,6 @@ header .languge .lang a .ar {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding-top: 10px;
-  border-left: 1px solid #ccc;
 }
 .sidenav::-webkit-scrollbar {
   width: 0px;
@@ -648,12 +648,28 @@ iframe {
 }
 /*  end scroll up */
 
+/*  soon */
+.soon .content {
+  width: 50%;
+  margin: 30px auto;
+  background: #fff;
+  padding: 30px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2.6rem #e4e3e3;
+}
+/*  end soon */
+
 @media (max-width: 769px) {
   header .menu {
     display: block;
   }
   header .menu .open i {
     font-size: 1.5rem;
+  }
+  .sidenav {
+    width: 0;
   }
   header .navmenu {
     display: none;
@@ -736,6 +752,9 @@ iframe {
     padding: 1rem 0;
   }
   /*  end who-are-we*/
+  .soon .content {
+    width: 90%;
+  }
 }
 
 @media (max-width: 999px) {
