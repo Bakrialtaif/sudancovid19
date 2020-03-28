@@ -30,10 +30,10 @@ $(document).ready(function() {
   $(window).scroll(function() {
     if ($(this).scrollTop() >= 80) {
       $(header).addClass("fixed-top");
-      $(header).css("boxShadow", "0px 0px 2.6rem #e4e3e3");
+      header.css('boxShadow',' var(--boxShadow)');
     } else {
       $(header).removeClass("fixed-top");
-      $(header).css("boxShadow", "none");
+      header.css('boxShadow',' none');
     }
   });
   //   style header boxShadow when  the scroll == 1000
@@ -54,4 +54,28 @@ $(document).ready(function() {
       .removeClass("active");
   });
   // end color active
+
+  //  dark mode
+
+  const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+  const currentTheme = localStorage.getItem('theme');
+  if(currentTheme){
+    document.documentElement.setAttribute('data-theme',currentTheme);
+    if(currentTheme === 'dark'){
+      toggleSwitch.checked = true;
+    }
+  }
+  function switchTheme(e){
+    
+    if(e.target.checked){
+      document.documentElement.setAttribute('data-theme','dark');
+      localStorage.setItem('theme','dark');
+    }
+    else{
+      document.documentElement.setAttribute('data-theme','light');
+      localStorage.setItem('theme','light');
+    }
+  }
+  toggleSwitch.addEventListener('change',switchTheme,false);
+
 });
