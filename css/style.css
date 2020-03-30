@@ -23,52 +23,54 @@ project name  ===> Corona-sd
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-:root{
-  --primary-color:#fff;
-  --secondary-color:#8c8c8c;
-  --boxShadow:0px 0px 2.6rem #e4e3e3;
-  --background-one:#f9faf5;
-  --background-two:teal;
-  --border-color:#eee;
-  --background-three:#fff;
-  --back-header:#fff;
-  --alert:#f8d7da;
-  --color-alert:#721c24;
-  --menu:#333;
-  --body:#212529;
-  --toggle:#8c8c8c
+:root {
+  --primary-color: #fff;
+  --secondary-color: #8c8c8c;
+  --boxShadow: 0px 0px 2.6rem #e4e3e3;
+  --background-one: #f9faf5;
+  --background-two: teal;
+  --border-color: #eee;
+  --background-three: #fff;
+  --back-header: #fff;
+  --alert: #f8d7da;
+  --color-alert: #721c24;
+  --menu: #333;
+  --body: #212529;
+  --toggle: #8c8c8c;
 }
 
-[data-theme="dark"]{
-  --primary-color:#ccc;
-  --secondary-color:#b3b9c5;
-  --body:#b3b9c5;
-  --boxShadow:0px 0px 2.6rem #0900082c;
-  --background-one:#090717;
-  --background-two:#14122f;
-  --border-color:#2a2b3a;
-  --background-three:#0c0d1b;
-  --back-header:#0d0921;
-  --alert:#0b0f29;
-  --color-alert:#ccc;
-  --menu:#ccc;
-  --toggle:#fff;
+[data-theme="dark"] {
+  --primary-color: #ccc;
+  --secondary-color: #b3b9c5;
+  --body: #b3b9c5;
+  --boxShadow: 0px 0px 2.6rem #0900082c;
+  --background-one: #090717;
+  --background-two: #14122f;
+  --border-color: #2a2b3a;
+  --background-three: #0c0d1b;
+  --back-header: #0d0921;
+  --alert: #0b0f29;
+  --color-alert: #ccc;
+  --menu: #ccc;
+  --toggle: #fff;
 }
-.theme-switch-wrapper{
+.theme-switch-wrapper {
   display: flex;
   flex-direction: row;
 }
-.theme-switch{
+.theme-switch {
   display: inline-block;
   height: 20px;
   position: relative;
   width: 50px;
 }
-.theme-switch-wrapper small{
-  margin-right: .5rem;
+.theme-switch-wrapper small {
+  margin-right: 0.5rem;
 }
-.theme-switch input{display: none;}
-.slider{
+.theme-switch input {
+  display: none;
+}
+.slider {
   background-color: var(--background-one);
   bottom: 0;
   border-width: 1px;
@@ -79,44 +81,44 @@ project name  ===> Corona-sd
   position: absolute;
   right: 0;
   top: 0;
-  transition: .4s;
-  -webkit-transition: .4s;
-  -moz-transition: .4s;
-  -ms-transition: .4s;
-  -o-transition: .4s;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
 }
-.slider::before{
+.slider::before {
   background-color: var(--toggle);
   bottom: 1px;
   content: "";
   height: 15px;
   left: 2px;
   position: absolute;
-  transition: .4s;
-  -webkit-transition: .4s;
-  -moz-transition: .4s;
-  -ms-transition: .4s;
-  -o-transition: .4s;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
   width: 16px;
 }
-.theme-switch input:checked + .slider{
+.theme-switch input:checked + .slider {
   background-color: #66bb6a;
 }
-.theme-switch input:checked + .slider::before{
+.theme-switch input:checked + .slider::before {
   transform: translateX(26px);
   -webkit-transform: translateX(26px);
   -moz-transform: translateX(26px);
   -ms-transform: translateX(26px);
   -o-transform: translateX(26px);
 }
-.slider.round{
+.slider.round {
   border-radius: 34px;
   -webkit-border-radius: 34px;
   -moz-border-radius: 34px;
   -ms-border-radius: 34px;
   -o-border-radius: 34px;
 }
-.slider.round::before{
+.slider.round::before {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -134,14 +136,17 @@ body {
   background-color: var(--background-one);
   color: var(--body);
 }
-.card{
+.card {
   background-color: var(--back-header);
 }
 .coron {
   /* color: tomato;
   font-weight: bold; */
 }
-ul li{
+ol {
+  padding: 10px;
+}
+ul li {
   color: var(--secondary-color);
 }
 a {
@@ -155,7 +160,6 @@ a {
 /*  start header */
 header {
   background-color: var(--back-header);
-  
 }
 header .nav-header {
   display: flex;
@@ -221,7 +225,6 @@ header .languge .lang a .ar {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 10px;
-
 }
 .sidenav::-webkit-scrollbar {
   width: 0px;
@@ -250,14 +253,14 @@ header .languge .lang a .ar {
   text-align: right;
   text-align: center;
 }
-.dark-icon{
+.dark-icon {
   cursor: pointer;
   width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 22px;
-    content: "";
-    /* left: 4%; */
+  height: 40px;
+  position: absolute;
+  top: 22px;
+  content: "";
+  /* left: 4%; */
 }
 .sidenav .link-nav:hover {
   background-color: var(--background-one);
@@ -302,7 +305,7 @@ header .languge .lang a .ar {
 .image-initative {
   border-width: 1px;
   border-style: solid;
-  border-color:var(--border-color) ;
+  border-color: var(--border-color);
 }
 .about-initative .content h5 {
   margin-top: 1rem;
@@ -326,7 +329,7 @@ header .languge .lang a .ar {
   padding: 1.5rem;
   border-width: 2px;
   border-style: solid;
-  border-color:var(--border-color) ;
+  border-color: var(--border-color);
   margin-top: 2rem;
 }
 .about-content p {
@@ -345,14 +348,14 @@ header .languge .lang a .ar {
   align-items: center;
   border-width: 2px;
   border-style: solid;
-  border-color:var(--border-color)  ;
+  border-color: var(--border-color);
   padding: 2rem;
   margin: 1rem;
 }
 .news .content-news {
   border-width: 2px;
   border-style: solid;
-  border-color:var(--border-color)  ;
+  border-color: var(--border-color);
   padding: 1rem;
   margin: 1rem;
 }
@@ -470,7 +473,7 @@ i {
 .import-refrance .ref-content .im-ref {
   border-width: 2px;
   border-style: solid;
-  border-color:var(--border-color) ;
+  border-color: var(--border-color);
   padding: 0.8rem;
 }
 /*  end import-refrance */
@@ -504,7 +507,7 @@ i {
   flex-direction: row;
 }
 .control-rom .nav-tabs {
-  box-shadow:  var(--boxShadow);
+  box-shadow: var(--boxShadow);
   margin-top: 2rem;
   background-color: var(--background-three);
   width: 20%;
@@ -515,7 +518,7 @@ i {
 }
 .control-rom .tab-content {
   margin-top: 2rem;
-  box-shadow:  var(--boxShadow);
+  box-shadow: var(--boxShadow);
   background-color: var(--background-three);
   padding: 1rem;
   width: 80%;
@@ -527,7 +530,7 @@ i {
   padding: 1rem;
   border-width: 1px;
   border-style: solid;
-  border-color:var(--border-color)  ;
+  border-color: var(--border-color);
   color: var(--secondary-color);
   border-radius: 0;
   font-size: 1rem;
@@ -572,7 +575,7 @@ i {
 .team-content {
   border-width: 1px;
   border-style: solid;
-  border-color:var(--border-color)  ;
+  border-color: var(--border-color);
   background-color: var(--back-header);
   padding: 2rem;
 }
@@ -647,7 +650,7 @@ i {
 }
 /*  end page team */
 .alert-danger {
-  color:var(--color-alert);
+  color: var(--color-alert);
   background-color: var(--alert);
   border-color: var(--border-color);
 }
@@ -661,8 +664,8 @@ iframe {
   margin-top: 1rem;
 }
 .ref-link .link p {
-  background-color:var(--back-header);
-  box-shadow:  var(--boxShadow);
+  background-color: var(--back-header);
+  box-shadow: var(--boxShadow);
   padding: 0.7rem;
   cursor: pointer;
 }
@@ -678,7 +681,7 @@ iframe {
 .guide .content-guide {
   border-width: 1px;
   border-style: solid;
-  border-color:var(--border-color)  ;
+  border-color: var(--border-color);
   padding: 1rem;
   margin: 1rem;
 }
@@ -721,7 +724,7 @@ iframe {
 .city .content-city {
   border-width: 1px;
   border-style: solid;
-  border-color:var(--border-color) ;
+  border-color: var(--border-color);
   padding: 1rem;
 }
 /*  end c-t-volunteer */
@@ -749,7 +752,7 @@ iframe {
 .who-border {
   border-width: 1px;
   border-style: solid;
-  border-color:var(--border-color)  ;
+  border-color: var(--border-color);
   margin: 1rem 0 1rem;
 }
 .who-border ul {
@@ -781,11 +784,11 @@ iframe {
   font-weight: bold;
   cursor: pointer;
   display: none;
-  background-color:var(--back-header);
-  box-shadow:  var(--boxShadow);
+  background-color: var(--back-header);
+  box-shadow: var(--boxShadow);
 }
 /*  end scroll up */
-.dark-ii{
+.dark-ii {
   display: none;
 }
 /*  soon */
@@ -805,10 +808,10 @@ iframe {
   header .menu {
     display: block;
   }
-  .dark-icon{
+  .dark-icon {
     width: 25px;
     height: 25px;
-  top:30px
+    top: 30px;
   }
   header .menu .open i {
     font-size: 1.5rem;
@@ -877,7 +880,7 @@ iframe {
   }
   header .nav-header .languge {
     justify-content: flex-end;
-}
+  }
   .guide .content-guide {
     margin: 1rem 0 0 0;
   }
