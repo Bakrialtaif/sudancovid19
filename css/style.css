@@ -213,7 +213,9 @@ header .languge .lang a .ar {
   width: 16px;
   height: 11px;
 }
-
+.recovering {
+  background-color: teal;
+}
 .sidenav {
   height: 100%;
   width: 0;
