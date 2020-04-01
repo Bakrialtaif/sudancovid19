@@ -1,0 +1,65 @@
+.carousel {
+    width: 100%;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    border: 2px solid #338180;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.carousel-control-prev {
+    transform: translateX(150%);
+}
+
+.carousel-control-next {
+    transform: translateX(-150%);
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators li {
+    border: 1px solid #338180;
+    height: 6px;
+    border-radius: 2px;
+}
+
+.carousel-indicators li.active {
+    background: #338180;
+}
+
+.carousel .initiative {
+    height: 300px;
+    flex: 1;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-image: none;
+}
+
+.carousel .team {
+    width: 100%;
+    height: 400px;
+    flex: 1;
+}
+
+.carousel .team .team-content {
+    height: 100%;
+}
+
+@media (max-width: 999px) {
+    .carousel-control-prev {
+        transform: translateX(0%);
+    }
+
+    .carousel-control-next {
+        transform: translateX(0%);
+    }
+
+    .sm\:d-none {
+        display: none;
+    }
+}
