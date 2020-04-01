@@ -22,12 +22,20 @@ project name  ===> Corona-sd
     top: 0 !important;
 }
 
+/** end of utilities */
+
 .btn.btn-call-to-action {
     border: 2px solid #338180;
     border-radius: 0;
     padding: .5rem 2rem;
     color: #338180;
     font-weight: bold;
+}
+
+.doctors {
+    height: 720px;
+    border: solid 1px var(--border-color);
+    background-image: url('/image/doctors.jpeg');
 }
 
 /*  start gernal settig */
